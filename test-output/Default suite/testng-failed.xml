@@ -5,12 +5,22 @@
     <classes>
       <class name="useClasses.Test_EtoE_BuyProduct">
         <methods>
-          <include name="afterMethod"/>
-          <include name="verifyUserCanLogin"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
+          <include name="verifyUserCanSelectProduct"/>
+          <include name="verifyUserCanAddProductToCat"/>
+          <include name="beforeTest"/>
           <include name="afterClass"/>
+          <include name="verifyUserCanPlaceOrder"/>
+          <include name="flushReporter"/>
+          <include name="afterMethod"/>
+          <include name="verifyUserCanCheckOrderSummary"/>
+          <include name="verifyUserCanConfirmOrderByCOD"/>
+          <include name="verifyUserCanLogin"/>
+          <include name="afterTest"/>
           <include name="verifyUserCanSearcProduct"/>
+          <include name="getExtentReporter"/>
+          <include name="verifyUserCanSelectAddress"/>
         </methods>
       </class> <!-- useClasses.Test_EtoE_BuyProduct -->
     </classes>

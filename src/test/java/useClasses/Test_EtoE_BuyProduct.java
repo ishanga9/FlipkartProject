@@ -3,8 +3,7 @@ package useClasses;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
+
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
@@ -14,6 +13,7 @@ import pomClasses.CheckOutPage;
 import pomClasses.HomePage;
 import pomClasses.LoginPage;
 import pomClasses.ProductDetailPage;
+import utilityClasses.CommonExtentReporter;
 import utilityClasses.ExtentReports_Exa;
 import utilityClasses.UtilityClass;
 
@@ -23,37 +23,32 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.openqa.selenium.WebDriver;
+
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 
-public class Test_EtoE_BuyProduct extends UtilityClass {
-  WebDriver driver;
+public class Test_EtoE_BuyProduct extends CommonExtentReporter {
+ // WebDriver driver;
   LoginPage lp;
   CartPage cp;
   HomePage hp;
   ProductDetailPage pdp;
   CheckOutPage cop;
   String Selectedproduct;
-  ExtentTest test;
-  ExtentReports reporter;
   
-  @Parameters ("testName")
-  @BeforeTest
-  public void beforeTest(String para)
-  {
-	  reporter =ExtentReports_Exa.getExtentReporter();
-	  test=reporter.createTest(para);
-	 
-  }
+  
+  
+  
+  
   
   @Parameters("browser")
   @BeforeClass
   public void beforeClass(String browser1) throws InterruptedException {
 	   driver=BaseClass.getDriver(browser1);
 	   Reporter.log("Test_EtoE_BuyProduct  :Driver initiated. "+browser1,true);
+	   test=reporter.createTest("Test_EtoE_BuyProduct");
   }
   @BeforeMethod
   public void beforeMethod() throws Exception {
@@ -170,13 +165,13 @@ public class Test_EtoE_BuyProduct extends UtilityClass {
 	
 	  if(result.getStatus()== ITestResult.SUCCESS)
 	  {
-		test.log(Status.PASS, "Test is pass "+this.getClass().getName());
+		test.log(Status.PASS, "Test is pass "+result.getInstanceName()+" "+result.getName());
 	  }
 	  else
 	  {
 		  String path=takeScreenshot(driver,this.getClass().getName());
-		  test.log(Status.FAIL, "Test is fail "+this.getClass().getName(),MediaEntityBuilder.createScreenCaptureFromPath(path).build());
-	  }
+		  test.log(Status.FAIL, "Test is fail "+result.getInstanceName()+" "+result.getName(),MediaEntityBuilder.createScreenCaptureFromPath(path).build());
+			  }
 	  Reporter.log("Test_EtoE_BuyProduct :After method",true);
   }
 
@@ -192,10 +187,6 @@ public class Test_EtoE_BuyProduct extends UtilityClass {
 //	  {}
   }
   
-  @AfterTest
-  public void afterTest()
-  {
-	  reporter.flush();
-  }
+  
 
 }

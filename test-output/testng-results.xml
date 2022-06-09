@@ -1,91 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="14" passed="10" failed="1" skipped="1">
+<testng-results ignored="2" total="11" passed="1" failed="1" skipped="7">
   <reporter-output>
     <line>
-      <![CDATA[TestIncludeExcludeAndGroups :B Method is called]]>
+      <![CDATA[Test_CheckLogin :Browser name is populated chrome]]>
+    </line>
+    <line>
+      <![CDATA[Test_CheckLogin :Driver initiated.]]>
+    </line>
+    <line>
+      <![CDATA[Test_CheckLogin :Login is complete]]>
+    </line>
+    <line>
+      <![CDATA[Test_CheckLogin :Profile is Loaded.]]>
     </line>
     <line>
       <![CDATA[Test_EtoE_BuyProduct :After method]]>
     </line>
     <line>
-      <![CDATA[TestIncludeExcludeAndGroups:D Method is called]]>
+      <![CDATA[Test_CheckLogin :Driver closed.]]>
+    </line>
+    <line>
+      <![CDATA[Test_EtoE_BuyProduct  :Driver initiated. chrome]]>
+    </line>
+    <line>
+      <![CDATA[Test_EtoE_BuyProduct :Initializing Objects ]]>
     </line>
     <line>
       <![CDATA[Test_EtoE_BuyProduct :After method]]>
     </line>
     <line>
-      <![CDATA[TestIncludeExcludeAndGroups: E Method is called]]>
-    </line>
-    <line>
-      <![CDATA[Test_EtoE_BuyProduct :After method]]>
-    </line>
-    <line>
-      <![CDATA[ TestIncludeExcludeAndGroups:A Method is called]]>
-    </line>
-    <line>
-      <![CDATA[Test_EtoE_BuyProduct :After method]]>
-    </line>
-    <line>
-      <![CDATA[ TestIncludeExcludeAndGroups:A Method is called]]>
-    </line>
-    <line>
-      <![CDATA[Test_EtoE_BuyProduct :After method]]>
-    </line>
-    <line>
-      <![CDATA[ TestIncludeExcludeAndGroups:A Method is called]]>
-    </line>
-    <line>
-      <![CDATA[Test_EtoE_BuyProduct :After method]]>
-    </line>
-    <line>
-      <![CDATA[TestIncludeExcludeAndGroups:C Method is called]]>
-    </line>
-    <line>
-      <![CDATA[Test_EtoE_BuyProduct :After method]]>
-    </line>
-    <line>
-      <![CDATA[ A Method is called]]>
-    </line>
-    <line>
-      <![CDATA[Test_EtoE_BuyProduct :After method]]>
-    </line>
-    <line>
-      <![CDATA[B Method is called]]>
-    </line>
-    <line>
-      <![CDATA[Test_EtoE_BuyProduct :After method]]>
-    </line>
-    <line>
-      <![CDATA[D Method is called]]>
-    </line>
-    <line>
-      <![CDATA[Test_EtoE_BuyProduct :After method]]>
-    </line>
-    <line>
-      <![CDATA[ E Method is called]]>
-    </line>
-    <line>
-      <![CDATA[Test_EtoE_BuyProduct :After method]]>
+      <![CDATA[Test_EtoE_BuyProduct :Driver closed.]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-06-09T07:28:02 IST" name="Suite" finished-at="2022-06-09T07:28:07 IST" duration-ms="5559">
+  <suite started-at="2022-06-09T11:52:42 IST" name="Suite" finished-at="2022-06-09T11:54:48 IST" duration-ms="125479">
     <groups>
     </groups>
-    <test started-at="2022-06-09T07:28:02 IST" name="BuyProduct" finished-at="2022-06-09T07:28:07 IST" duration-ms="5559">
-      <class name="useClasses.TNG_keywords">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:useClasses.TNG_keywords@20140db9]" started-at="2022-06-09T07:28:02 IST" name="beforeClass" finished-at="2022-06-09T07:28:02 IST" duration-ms="0" status="PASS">
+    <test started-at="2022-06-09T11:52:42 IST" name="MultipleClassesReporting" finished-at="2022-06-09T11:54:48 IST" duration-ms="125479">
+      <class name="useClasses.Test_EtoE_BuyProduct">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f]" started-at="2022-06-09T11:53:44 IST" name="beforeClass" finished-at="2022-06-09T11:54:10 IST" duration-ms="26295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test_EtoE_BuyProduct  :Driver initiated. chrome]]>
+            </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="A()[pri:0, instance:useClasses.TNG_keywords@20140db9]" started-at="2022-06-09T07:28:02 IST" name="A" finished-at="2022-06-09T07:28:02 IST" duration-ms="16" status="FAIL">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f]" started-at="2022-06-09T11:54:10 IST" name="beforeMethod" finished-at="2022-06-09T11:54:10 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test_EtoE_BuyProduct :Initializing Objects ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUserCanLogin()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f]" started-at="2022-06-09T11:54:10 IST" name="verifyUserCanLogin" finished-at="2022-06-09T11:54:31 IST" duration-ms="20922" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[for fun]]>
+              <![CDATA[Test_EtoE_BuyProduct:Profile name is mismatch expected [Himank] but found [More]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: for fun
+              <![CDATA[java.lang.AssertionError: Test_EtoE_BuyProduct:Profile name is mismatch expected [Himank] but found [More]
 at org.testng.Assert.fail(Assert.java:99)
-at useClasses.TNG_keywords.A(TNG_keywords.java:29)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at useClasses.Test_EtoE_BuyProduct.verifyUserCanLogin(Test_EtoE_BuyProduct.java:74)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -118,16 +103,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
-            <line>
-              <![CDATA[ A Method is called]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- A -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:useClasses.TNG_keywords@20140db9]" started-at="2022-06-09T07:28:02 IST" name="afterMethod" finished-at="2022-06-09T07:28:07 IST" duration-ms="5212" status="PASS">
+        </test-method> <!-- verifyUserCanLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f]" started-at="2022-06-09T11:54:31 IST" name="afterMethod" finished-at="2022-06-09T11:54:48 IST" duration-ms="16432" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=A status=FAILURE method=TNG_keywords.A()[pri:0, instance:useClasses.TNG_keywords@20140db9] output= A Method is called]]]>
+                <![CDATA[[TestResult name=verifyUserCanLogin status=FAILURE method=Test_EtoE_BuyProduct.verifyUserCanLogin()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
@@ -137,34 +119,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="B()[pri:0, instance:useClasses.TNG_keywords@20140db9]" started-at="2022-06-09T07:28:07 IST" name="B" finished-at="2022-06-09T07:28:07 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[B Method is called]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- B -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:useClasses.TNG_keywords@20140db9]" started-at="2022-06-09T07:28:07 IST" name="afterMethod" finished-at="2022-06-09T07:28:07 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=B status=SUCCESS method=TNG_keywords.B()[pri:0, instance:useClasses.TNG_keywords@20140db9] output=B Method is called]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test_EtoE_BuyProduct :After method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="C()[pri:0, instance:useClasses.TNG_keywords@20140db9]" started-at="2022-06-09T07:28:07 IST" name="C" finished-at="2022-06-09T07:28:07 IST" depends-on-methods="useClasses.TNG_keywords.A" duration-ms="0" status="SKIP">
+        <test-method signature="verifyUserCanSearcProduct()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f]" started-at="2022-06-09T11:54:48 IST" name="verifyUserCanSearcProduct" finished-at="2022-06-09T11:54:48 IST" depends-on-methods="useClasses.Test_EtoE_BuyProduct.verifyUserCanLogin" duration-ms="1" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TNG_keywords.C()[pri:0, instance:useClasses.TNG_keywords@20140db9] depends on not successfully finished methods]]>
+              <![CDATA[Method Test_EtoE_BuyProduct.verifyUserCanSearcProduct()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TNG_keywords.C()[pri:0, instance:useClasses.TNG_keywords@20140db9] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method Test_EtoE_BuyProduct.verifyUserCanSearcProduct()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -189,71 +150,252 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- C -->
-        <test-method signature="D()[pri:0, instance:useClasses.TNG_keywords@20140db9]" started-at="2022-06-09T07:28:07 IST" name="D" finished-at="2022-06-09T07:28:07 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- verifyUserCanSearcProduct -->
+        <test-method signature="verifyUserCanSelectProduct()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f]" started-at="2022-06-09T11:54:48 IST" name="verifyUserCanSelectProduct" finished-at="2022-06-09T11:54:48 IST" depends-on-methods="useClasses.Test_EtoE_BuyProduct.verifyUserCanSearcProduct" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test_EtoE_BuyProduct.verifyUserCanSelectProduct()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test_EtoE_BuyProduct.verifyUserCanSelectProduct()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanSelectProduct -->
+        <test-method signature="verifyUserCanAddProductToCat()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f]" started-at="2022-06-09T11:54:48 IST" name="verifyUserCanAddProductToCat" finished-at="2022-06-09T11:54:48 IST" depends-on-methods="useClasses.Test_EtoE_BuyProduct.verifyUserCanSelectProduct" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test_EtoE_BuyProduct.verifyUserCanAddProductToCat()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test_EtoE_BuyProduct.verifyUserCanAddProductToCat()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanAddProductToCat -->
+        <test-method signature="verifyUserCanPlaceOrder()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f]" started-at="2022-06-09T11:54:48 IST" name="verifyUserCanPlaceOrder" finished-at="2022-06-09T11:54:48 IST" depends-on-methods="useClasses.Test_EtoE_BuyProduct.verifyUserCanAddProductToCat" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test_EtoE_BuyProduct.verifyUserCanPlaceOrder()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test_EtoE_BuyProduct.verifyUserCanPlaceOrder()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanPlaceOrder -->
+        <test-method signature="verifyUserCanSelectAddress()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f]" started-at="2022-06-09T11:54:48 IST" name="verifyUserCanSelectAddress" finished-at="2022-06-09T11:54:48 IST" depends-on-methods="useClasses.Test_EtoE_BuyProduct.verifyUserCanPlaceOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test_EtoE_BuyProduct.verifyUserCanSelectAddress()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test_EtoE_BuyProduct.verifyUserCanSelectAddress()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanSelectAddress -->
+        <test-method signature="verifyUserCanCheckOrderSummary()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f]" started-at="2022-06-09T11:54:48 IST" name="verifyUserCanCheckOrderSummary" finished-at="2022-06-09T11:54:48 IST" depends-on-methods="useClasses.Test_EtoE_BuyProduct.verifyUserCanSelectAddress" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test_EtoE_BuyProduct.verifyUserCanCheckOrderSummary()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test_EtoE_BuyProduct.verifyUserCanCheckOrderSummary()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanCheckOrderSummary -->
+        <test-method signature="verifyUserCanConfirmOrderByCOD()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f]" started-at="2022-06-09T11:54:48 IST" name="verifyUserCanConfirmOrderByCOD" finished-at="2022-06-09T11:54:48 IST" depends-on-methods="useClasses.Test_EtoE_BuyProduct.verifyUserCanCheckOrderSummary" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test_EtoE_BuyProduct.verifyUserCanConfirmOrderByCOD()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test_EtoE_BuyProduct.verifyUserCanConfirmOrderByCOD()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanConfirmOrderByCOD -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:useClasses.Test_EtoE_BuyProduct@d86a6f]" started-at="2022-06-09T11:54:48 IST" name="afterClass" finished-at="2022-06-09T11:54:48 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[D Method is called]]>
+              <![CDATA[Test_EtoE_BuyProduct :Driver closed.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- D -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:useClasses.TNG_keywords@20140db9]" started-at="2022-06-09T07:28:07 IST" name="afterMethod" finished-at="2022-06-09T07:28:07 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=D status=SUCCESS method=TNG_keywords.D()[pri:0, instance:useClasses.TNG_keywords@20140db9] output=D Method is called]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test_EtoE_BuyProduct :After method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="E()[pri:0, instance:useClasses.TNG_keywords@20140db9]" started-at="2022-06-09T07:28:07 IST" name="E" finished-at="2022-06-09T07:28:07 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ E Method is called]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- E -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:useClasses.TNG_keywords@20140db9]" started-at="2022-06-09T07:28:07 IST" name="afterMethod" finished-at="2022-06-09T07:28:07 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=E status=SUCCESS method=TNG_keywords.E()[pri:0, instance:useClasses.TNG_keywords@20140db9] output= E Method is called]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test_EtoE_BuyProduct :After method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- useClasses.TNG_keywords -->
-      <class name="useClasses.TestIncludeExcludeAndGroups">
-        <test-method is-config="true" signature="getExtentReporter()[pri:0, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:01 IST" name="getExtentReporter" finished-at="2022-06-09T07:28:02 IST" duration-ms="742" status="PASS">
+        </test-method> <!-- afterClass -->
+      </class> <!-- useClasses.Test_EtoE_BuyProduct -->
+      <class name="useClasses.Test_CheckLogin">
+        <test-method is-config="true" signature="getExtentReporter()[pri:0, instance:useClasses.Test_CheckLogin@1c7696c6]" started-at="2022-06-09T11:52:42 IST" name="getExtentReporter" finished-at="2022-06-09T11:52:42 IST" duration-ms="389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getExtentReporter -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="beforeClass" finished-at="2022-06-09T07:28:02 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:useClasses.Test_CheckLogin@1c7696c6]" started-at="2022-06-09T11:52:42 IST" name="beforeTest" finished-at="2022-06-09T11:52:42 IST" duration-ms="2" status="PASS">
           <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:useClasses.Test_CheckLogin@1c7696c6]" started-at="2022-06-09T11:52:42 IST" name="beforeClass" finished-at="2022-06-09T11:53:26 IST" duration-ms="44024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test_CheckLogin :Browser name is populated chrome]]>
+            </line>
+            <line>
+              <![CDATA[Test_CheckLogin :Driver initiated.]]>
+            </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="B()[pri:-6, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="B" finished-at="2022-06-09T07:28:02 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:useClasses.Test_CheckLogin@1c7696c6]" started-at="2022-06-09T11:53:26 IST" name="beforeMethod" finished-at="2022-06-09T11:53:33 IST" duration-ms="6542" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[TestIncludeExcludeAndGroups :B Method is called]]>
+              <![CDATA[Test_CheckLogin :Login is complete]]>
             </line>
           </reporter-output>
-        </test-method> <!-- B -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="afterMethod" finished-at="2022-06-09T07:28:02 IST" duration-ms="73" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkProfile()[pri:0, instance:useClasses.Test_CheckLogin@1c7696c6]" started-at="2022-06-09T11:53:33 IST" name="checkProfile" finished-at="2022-06-09T11:53:35 IST" duration-ms="2054" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test_CheckLogin :Profile is Loaded.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkProfile -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:useClasses.Test_CheckLogin@1c7696c6]" started-at="2022-06-09T11:53:35 IST" name="afterMethod" finished-at="2022-06-09T11:53:35 IST" duration-ms="47" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=B status=SUCCESS method=TestIncludeExcludeAndGroups.B()[pri:-6, instance:useClasses.TestIncludeExcludeAndGroups@e350b40] output=TestIncludeExcludeAndGroups :B Method is called]]]>
+                <![CDATA[[TestResult name=checkProfile status=SUCCESS method=Test_CheckLogin.checkProfile()[pri:0, instance:useClasses.Test_CheckLogin@1c7696c6] output=Test_CheckLogin :Profile is Loaded.]]]>
               </value>
             </param>
           </params>
@@ -263,137 +405,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="D()[pri:-1, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="D" finished-at="2022-06-09T07:28:02 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:useClasses.Test_CheckLogin@1c7696c6]" started-at="2022-06-09T11:53:35 IST" name="afterClass" finished-at="2022-06-09T11:53:44 IST" duration-ms="8792" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[TestIncludeExcludeAndGroups:D Method is called]]>
+              <![CDATA[Test_CheckLogin :Driver closed.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- D -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="afterMethod" finished-at="2022-06-09T07:28:02 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=D status=SUCCESS method=TestIncludeExcludeAndGroups.D()[pri:-1, instance:useClasses.TestIncludeExcludeAndGroups@e350b40] output=TestIncludeExcludeAndGroups:D Method is called]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test_EtoE_BuyProduct :After method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="E()[pri:0, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="E" finished-at="2022-06-09T07:28:02 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[TestIncludeExcludeAndGroups: E Method is called]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- E -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="afterMethod" finished-at="2022-06-09T07:28:02 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=E status=SUCCESS method=TestIncludeExcludeAndGroups.E()[pri:0, instance:useClasses.TestIncludeExcludeAndGroups@e350b40] output=TestIncludeExcludeAndGroups: E Method is called]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test_EtoE_BuyProduct :After method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="A()[pri:2, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="A" finished-at="2022-06-09T07:28:02 IST" duration-ms="20" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ TestIncludeExcludeAndGroups:A Method is called]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- A -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="afterMethod" finished-at="2022-06-09T07:28:02 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=A status=SUCCESS method=TestIncludeExcludeAndGroups.A()[pri:2, instance:useClasses.TestIncludeExcludeAndGroups@e350b40] output= TestIncludeExcludeAndGroups:A Method is called]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test_EtoE_BuyProduct :After method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="A()[pri:2, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="A" finished-at="2022-06-09T07:28:02 IST" duration-ms="12" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ TestIncludeExcludeAndGroups:A Method is called]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- A -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="afterMethod" finished-at="2022-06-09T07:28:02 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=A status=SUCCESS method=TestIncludeExcludeAndGroups.A()[pri:2, instance:useClasses.TestIncludeExcludeAndGroups@e350b40] output= TestIncludeExcludeAndGroups:A Method is called]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test_EtoE_BuyProduct :After method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="A()[pri:2, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="A" finished-at="2022-06-09T07:28:02 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ TestIncludeExcludeAndGroups:A Method is called]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- A -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="afterMethod" finished-at="2022-06-09T07:28:02 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=A status=SUCCESS method=TestIncludeExcludeAndGroups.A()[pri:2, instance:useClasses.TestIncludeExcludeAndGroups@e350b40] output= TestIncludeExcludeAndGroups:A Method is called]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test_EtoE_BuyProduct :After method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="C()[pri:-6, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="C" finished-at="2022-06-09T07:28:02 IST" depends-on-methods="useClasses.TestIncludeExcludeAndGroups.A" duration-ms="5" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[TestIncludeExcludeAndGroups:C Method is called]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- C -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:02 IST" name="afterMethod" finished-at="2022-06-09T07:28:02 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=C status=SUCCESS method=TestIncludeExcludeAndGroups.C()[pri:-6, instance:useClasses.TestIncludeExcludeAndGroups@e350b40] output=TestIncludeExcludeAndGroups:C Method is called]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test_EtoE_BuyProduct :After method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="flushReporter()[pri:0, instance:useClasses.TestIncludeExcludeAndGroups@e350b40]" started-at="2022-06-09T07:28:08 IST" name="flushReporter" finished-at="2022-06-09T07:28:08 IST" duration-ms="678" status="PASS">
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="flushReporter()[pri:0, instance:useClasses.Test_CheckLogin@1c7696c6]" started-at="2022-06-09T11:54:49 IST" name="flushReporter" finished-at="2022-06-09T11:55:02 IST" duration-ms="13359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReporter -->
-      </class> <!-- useClasses.TestIncludeExcludeAndGroups -->
-    </test> <!-- BuyProduct -->
+      </class> <!-- useClasses.Test_CheckLogin -->
+    </test> <!-- MultipleClassesReporting -->
   </suite> <!-- Suite -->
 </testng-results>

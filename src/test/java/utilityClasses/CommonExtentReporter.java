@@ -1,5 +1,6 @@
 package utilityClasses;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -15,6 +16,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class CommonExtentReporter extends UtilityClass {
+	public WebDriver driver;
 	public static ExtentHtmlReporter htmlre;
 	public static ExtentReports reporter;
 	public static ExtentTest test;
@@ -37,7 +39,8 @@ public class CommonExtentReporter extends UtilityClass {
 		  }
 		  else
 		  {
-			 String path=screenshotRobot(result.getName());
+			 //String path=screenshotRobot(result.getName());
+			 String path=takeScreenshot(driver,this.getClass().getName());
 			  test.log(Status.FAIL, "Test is fail "+result.getInstanceName()+" "+result.getName(),MediaEntityBuilder.createScreenCaptureFromPath(path).build());
 		  }
 		  Reporter.log("Test_EtoE_BuyProduct :After method",true);
