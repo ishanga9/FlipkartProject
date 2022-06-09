@@ -5,8 +5,7 @@ import org.testng.annotations.Test;
 
 public class groupseg1 {
 	@Test(groups = "regression")
-	  public void TC1()
-	  
+	  public void TC1()	  
 	  {
 		  Reporter.log("TC1 regression Running",true);
 	  }
