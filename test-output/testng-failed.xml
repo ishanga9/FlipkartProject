@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="testName" value="TwoClassReporting"/>
+  <listeners>
+    <listener class-name="baseClasses.Listener"/>
+  </listeners>
+  <test thread-count="5" name="BuyProduct(failed)">
+    <classes>
+      <class name="useClasses.TNG_keywords">
+        <methods>
+          <include name="C"/>
+          <include name="flushReporter"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="getExtentReporter"/>
+          <include name="A"/>
+        </methods>
+      </class> <!-- useClasses.TNG_keywords -->
+    </classes>
+  </test> <!-- BuyProduct(failed) -->
+</suite> <!-- Failed suite [Suite] -->
