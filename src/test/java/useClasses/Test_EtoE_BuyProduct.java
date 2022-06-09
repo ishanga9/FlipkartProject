@@ -31,6 +31,8 @@ import org.testng.annotations.AfterClass;
 
 public class Test_EtoE_BuyProduct extends CommonExtentReporter {
  // WebDriver driver;
+//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 token for git
+	// to push git push origin HEAD:master
   LoginPage lp;
   CartPage cp;
   HomePage hp;
