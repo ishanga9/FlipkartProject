@@ -23,7 +23,8 @@ public class BaseClass {
 			driver.get("https://www.flipkart.com/");
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			//driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+			//added comment for 60sec implecit wait
+			//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			Thread.sleep(3000);
 		}
 		else if(browser.equals("edge"))
