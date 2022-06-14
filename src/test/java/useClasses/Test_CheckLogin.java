@@ -12,6 +12,7 @@ import utilityClasses.UtilityClass;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Factory;
 import org.testng.annotations.Parameters;
 
 import org.testng.annotations.BeforeClass;
@@ -43,18 +44,20 @@ public class Test_CheckLogin extends CommonExtentReporter {
 
 	  @BeforeMethod
 	  public void beforeMethod() throws Exception {
-		  LoginPage lp=new LoginPage(driver);
-			lp.putEmail();
-			lp.putPassward();
-			UtilityClass.takeScreenshot(driver,this.getClass().getName());
-			lp.clickLoginButton();
-			Reporter.log("Test_CheckLogin :Login is complete",true);
-			Thread.sleep(3000);
+		  
 			
 	  }
-	  
+	
+ 
   @Test
-  public void checkProfile() {
+  public void  checkProfile() throws Exception {
+	  LoginPage lp=new LoginPage(driver);
+		lp.putEmail();
+		lp.putPassward();
+		UtilityClass.takeScreenshot(driver,this.getClass().getName());
+		lp.clickLoginButton();
+		Reporter.log("Test_CheckLogin :Login is complete",true);
+		Thread.sleep(3000);
 	 hp =new HomePage(driver);
 	  
 	  Assert.assertTrue(hp.isLoginSuccessfull());
