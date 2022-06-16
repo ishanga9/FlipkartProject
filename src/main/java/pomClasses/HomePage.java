@@ -54,7 +54,7 @@ public class HomePage extends UtilityClass {
 	{
 		waitFor(driver,ecart,10).click();
 	}
-	public boolean isLoginSuccessfull()
+	public boolean isLoginSuccessfull(WebDriver driver)
 	{
 		profile=waitFor(driver,profile,10);
 		if(profile.getText().equals("Himank"))
