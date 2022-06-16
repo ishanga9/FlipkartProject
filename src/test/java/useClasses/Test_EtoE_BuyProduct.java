@@ -73,7 +73,7 @@ public class Test_EtoE_BuyProduct extends CommonExtentReporter {
 		UtilityClass.takeScreenshot(driver,this.getClass().getName());
 		lp.clickLoginButton();
 		Thread.sleep(20000);
-		Assert.assertEquals(hp.getProfileName(), "Himank","Test_EtoE_BuyProduct:Profile name is mismatch");
+		Assert.assertEquals(hp.getProfileName( driver), "Himank","Test_EtoE_BuyProduct:Profile name is mismatch");
 		Reporter.log("Test_EtoE_BuyProduct:Login is complete",true);
 		
   }

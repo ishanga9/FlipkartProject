@@ -54,7 +54,7 @@ public class HomePage extends UtilityClass {
 	{
 		waitFor(driver,ecart,10).click();
 	}
-	public boolean isLoginSuccessfull(WebDriver driver)
+	public boolean isLoginSuccessfull()
 	{
 		profile=waitFor(driver,profile,10);
 		if(profile.getText().equals("Himank"))
@@ -66,7 +66,7 @@ public class HomePage extends UtilityClass {
 			return false;
 			}
 	}
-	public String getProfileName()
+	public String getProfileName(WebDriver driver)
 	{
 		profile=waitFor(driver,profile,60);
 		String name=profile.getText();
@@ -124,5 +124,7 @@ public class HomePage extends UtilityClass {
 			System.out.println("Logout trace ends====================================================");
 		}
 	}
+
+	
 	
 }
